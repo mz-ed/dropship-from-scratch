@@ -2,7 +2,7 @@ const Profile = () => (
   <div style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
     <div style={{ textAlign: 'center', marginBottom: '30px' }}>
       <img
-        src="https://via.placeholder.com/120"
+        src="/home/kali/Downloads/jpeg(4).jpg"
         alt="Profile"
         style={{
           width: '120px',

@@ -1,8 +1,9 @@
 // client/src/components/Navbar.js
 import { Link } from 'react-router-dom';
+import "../styles/navbar.css";
 
 const Navbar = () => (
-  <nav className="bg-gray-800 text-white p-4 flex gap-4">
+  <nav className="navbar">
     <Link to="/">Home</Link>
     <Link to="/products">Products</Link>
     <Link to="/cart">Cart</Link>

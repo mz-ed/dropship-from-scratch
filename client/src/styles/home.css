@@ -1,0 +1,83 @@
+.home-container {
+    min-height: 100vh;
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(to bottom right, #eff6ff, #dbeafe);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .home-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1e40af;
+  }
+  
+  .highlight {
+    color: #2563eb;
+  }
+  
+  .home-subtitle {
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    color: #374151;
+    max-width: 600px;
+  }
+  
+  .home-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #2563eb;
+    color: white;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .home-button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .features-grid {
+    margin-top: 3rem;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  @media (min-width: 768px) {
+    .features-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .feature-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.125rem;
+    color: #1d4ed8;
+    font-weight: 700;
+  }
+  
+  .feature-card p {
+    margin-top: 0.5rem;
+    color: #4b5563;
+    font-size: 0.95rem;
+  }
+  
+  .feature-card:hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  }
+  

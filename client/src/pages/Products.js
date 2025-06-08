@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { fetchProducts } from "../services/api";
+import "../styles/products.css"; // 👈 import your CSS
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -9,16 +10,20 @@ const Products = () => {
   }, []);
 
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Our Products</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div className="products-container">
+      <h1 className="products-title">Our Products</h1>
+      <div className="product-grid">
         {products.map((product) => (
-          <div key={product.id} className="border p-4 rounded shadow">
-            <img src={product.image_url} alt={product.name} className="w-full h-40 object-cover" />
-            <h2 className="text-lg font-semibold">{product.name}</h2>
-            <p>{product.description}</p>
-            <p className="text-green-600 font-bold">${product.price}</p>
-            <button className="mt-2 bg-blue-500 text-white px-4 py-1 rounded">Add to Cart</button>
+          <div key={product.id} className="product-card">
+            <img
+              src={product.image_url}
+              alt={product.name}
+              className="product-image"
+            />
+            <h2 className="product-name">{product.name}</h2>
+            <p className="product-description">{product.description}</p>
+            <p className="product-price">${product.price}</p>
+            <button className="product-button">Add to Cart</button>
           </div>
         ))}
       </div>
