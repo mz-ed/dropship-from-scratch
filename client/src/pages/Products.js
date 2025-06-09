@@ -14,17 +14,15 @@ const Products = () => {
       <h1 className="products-title">Our Products</h1>
       <div className="product-grid">
         {products.map((product) => (
-          <div key={product.id} className="product-card">
-            <img
-              src={product.image_url}
-              alt={product.name}
-              className="product-image"
-            />
-            <h2 className="product-name">{product.name}</h2>
-            <p className="product-description">{product.description}</p>
-            <p className="product-price">${product.price}</p>
-            <button className="product-button">Add to Cart</button>
-          </div>
+        <div key={product.id} className="product-card">
+        <img src={product.image_url} alt={product.name} className="product-image" />
+        <div className="product-details">
+          <h2>{product.name}</h2>
+          <p>{product.description}</p>
+          <p>${product.price}</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
         ))}
       </div>
     </div>
