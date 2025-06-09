@@ -1,21 +1,6 @@
-import { useEffect, useState } from "react";
-import { fetchProducts } from "../services/api";
 import "../styles/cart.css";
 
-const Cart = () => {
-  const [cart, setCart] = useState([]);
-
-  useEffect(() => {
-    fetchProducts().then((products) => {
-      const productsWithQuantity = products.map((product) => ({
-        ...product,
-        price: Number(product.price), // Ensure price is a number
-        quantity: 1,
-      }));
-      setCart(productsWithQuantity);
-    });
-  }, []);
-
+const Cart = ({ cart, setCart }) => {
   const handleQuantityChange = (id, delta) => {
     setCart((prev) =>
       prev.map((item) =>
