@@ -7,8 +7,20 @@ import Checkout from './pages/Checkout';
 import Login from './pages/Login';
 import Profile from './pages/Profile';
 import Home from './pages/Home';
+
+
 import Navbar from './components/Navbar';
 
+
+
+const CartPage = () => {
+  const [cart, setCart] = useState([]);
+  const user = { id: 1 }; // Or get from auth/session/etc.
+
+  return (
+    <Cart cart={cart} setCart={setCart} userId={user.id} />
+  );
+};
 const App = () => {
   const [cart, setCart] = useState([]);
 
@@ -56,6 +68,7 @@ const App = () => {
         } />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<signup />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
     </Router>

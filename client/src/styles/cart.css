@@ -103,4 +103,53 @@
   .checkout-btn:hover {
     background-color: #1d4ed8;
   }
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .payment-form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .confirm-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .cancel-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
   
