@@ -7,8 +7,8 @@ const PORT = process.env.PORT || 5000;
 require("dotenv").config();
 
 // Import routes
-const signupRoute = require("./routes/signup");
-app.use("/api/signup", signupRoute);
+const signupRoute = require("./routes/Signup");
+app.use("/api/Signup", signupRoute);
 
 const authRoutes = require("./routes/auth");
 app.use("/api", authRoutes);

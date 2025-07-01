@@ -7,7 +7,7 @@ import Checkout from './pages/Checkout';
 import Login from './pages/Login';
 import Profile from './pages/Profile';
 import Home from './pages/Home';
-
+import Signup from './pages/Signup';
 
 import Navbar from './components/Navbar';
 
@@ -68,7 +68,7 @@ const App = () => {
         } />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<signup />} />
+        <Route path="/Signup" element={<Signup />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
     </Router>
